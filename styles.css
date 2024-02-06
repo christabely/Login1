@@ -1,23 +1,87 @@
-body.black-background {
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+#usernameOrEmailContainer,
+#passwordContainer,
+#loginContainer {
+    background-color: black;
+    padding: 10px;
+    border: 2px solid pink;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#usernameOrEmailContainer label,
+#passwordContainer label,
+#loginContainer label {
+    margin-right: 10px;
+    color: pink;
+}
+
+#usernameOrEmailContainer input,
+#passwordContainer input {
+    color: pink;
+}
+
+#passwordIcon,
+#usernameOrEmailIcon {
+    margin-right: 10px;
+    color: pink;
+}
+
+#loginContainer label,
+#loginButton {
+    color: pink;
+}
+
+#loginButton {
+    background-color: #ff1493;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#socialIconsContainer {
+    text-align: center;
+    margin: 20px;
+}
+
+#socialIconsContainer i {
+    font-size: 2em;
+    margin: 0 10px;
+    cursor: pointer;
+    color: pink;
+}
+
+#signUpLink a {
+    color: #ff1493;
+}
+
+.black-background {
     background-color: black;
     color: pink;
 }
 
-h1.cursive-font {
+.cursive-font {
     text-align: center;
     font-family: 'cursive';
 }
 
-p.italic-text {
+.italic-text {
     text-align: center;
     font-style: italic;
-}
-
-.login-container {
-    border: 2px solid pink;
-    padding: 20px;
-    margin: 20px;
-    text-align: center;
 }
 
 .login-container small {
@@ -26,11 +90,6 @@ p.italic-text {
 
 .center-text {
     text-align: center;
-}
-
-.social-media-icons {
-    text-align: center;
-    margin: 20px;
 }
 
 .pink-text {
