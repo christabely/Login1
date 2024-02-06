@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-e3I0iM8H47M9FtXa3Q5MJSNKTdrfnhcxUp25J7A6Al3gjLLqlG9X5uVcm7R/SNRV/V/5NE0+pBZce2Vez+BeIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cassintimates - Login</title>
+</head>
+
+<body class="black-background pink-text">
+
+    <h1 class="center-text cursive-font">Cassintimates</h1>
+    <p class="center-text italic-text pink-text">Redefining Intimacy with Fashion</p>
+
+    <div class="login-container">
+        <form id="loginForm">
+            <label for="usernameOrEmail">Username or Email:</label>
+            <input type="text" id="usernameOrEmail" name="usernameOrEmail" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" pattern="^(?=.*[A-Z])(?=.*\d).{8,}$" required>
+            <small>Password must have at least one capital letter and one number.</small>
+
+            <label>
+                <input type="checkbox" id="rememberMe" name="rememberMe"> Remember Me
+            </label>
+
+            <button type="button" onclick="login()">Sign In</button>
+
+            <p><a href="#" onclick="forgotPassword()">Forgot Password</a></p>
+        </form>
+    </div>
+
+    <!-- Social Media Logins with Font Awesome icons -->
+    <div class="social-media-icons center-text">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-google"></i>
+        <i class="fab fa-instagram"></i>
+    </div>
+
+    <p class="center-text">Don't have an account? <a href="signup.html" class="pink-text">Sign up</a></p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
