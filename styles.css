@@ -1,0 +1,38 @@
+body.black-background {
+    background-color: black;
+    color: pink;
+}
+
+h1.cursive-font {
+    text-align: center;
+    font-family: 'cursive';
+}
+
+p.italic-text {
+    text-align: center;
+    font-style: italic;
+}
+
+.login-container {
+    border: 2px solid pink;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.login-container small {
+    display: block;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.social-media-icons {
+    text-align: center;
+    margin: 20px;
+}
+
+.pink-text {
+    color: pink;
+}
