@@ -9,39 +9,43 @@
     <title>Cassintimates - Login</title>
 </head>
 
-<body class="black-background pink-text">
+<body class="black-background">
 
-    <h1 class="center-text cursive-font">Cassintimates</h1>
-    <p class="center-text italic-text pink-text">Redefining Intimacy with Fashion</p>
+    <h1 class="cursive-font">Cassintimates</h1>
+    <p class="italic-text">Redefining Intimacy with Fashion</p>
 
-    <div class="login-container">
-        <form id="loginForm">
-            <label for="usernameOrEmail">Username or Email:</label>
-            <input type="text" id="usernameOrEmail" name="usernameOrEmail" required>
+    <div id="usernameOrEmailContainer">
+        <label for="usernameOrEmail">
+            <i id="usernameOrEmailIcon" class="fas fa-user"></i> Username/Email:
+        </label>
+        <input type="text" id="usernameOrEmail" name="usernameOrEmail" required>
+    </div>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" pattern="^(?=.*[A-Z])(?=.*\d).{8,}$" required>
-            <small>Password must have at least one capital letter and one number.</small>
+    <div id="passwordContainer">
+        <label for="password">
+            <i id="passwordIcon" class="fas fa-lock"></i> Password:
+        </label>
+        <input type="password" id="password" name="password" pattern="^(?=.*[A-Z])(?=.*\d).{8,}$" required>
+        <small>Password must have at least one capital letter and one number.</small>
+    </div>
 
-            <label>
-                <input type="checkbox" id="rememberMe" name="rememberMe"> Remember Me
-            </label>
+    <div id="loginContainer">
+        <label>
+            <input type="checkbox" id="rememberMe" name="rememberMe"> Remember Me
+        </label>
 
-            <button type="button" onclick="login()">Sign In</button>
-
-            <p><a href="#" onclick="forgotPassword()">Forgot Password</a></p>
-        </form>
+        <button id="loginButton" type="button" onclick="login()">Login</button>
     </div>
 
     <!-- Social Media Logins with Font Awesome icons -->
-    <div class="social-media-icons center-text">
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-google"></i>
-        <i class="fab fa-instagram"></i>
+    <div id="socialIconsContainer">
+        <i class="fab fa-facebook" onclick="loginWithSocial('Facebook')"></i>
+        <i class="fab fa-twitter" onclick="loginWithSocial('Twitter')"></i>
+        <i class="fab fa-google" onclick="loginWithSocial('Google')"></i>
+        <i class="fab fa-instagram" onclick="loginWithSocial('Instagram')"></i>
     </div>
 
-    <p class="center-text">Don't have an account? <a href="signup.html" class="pink-text">Sign up</a></p>
+    <p id="signUpLink">Don't have an account? <a href="signup.html" class="pink-text">Sign up</a></p>
 
     <script src="script.js"></script>
 </body>
