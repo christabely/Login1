@@ -18,14 +18,15 @@
         <label for="usernameOrEmail">
             <i id="usernameOrEmailIcon" class="fas fa-user"></i> Username/Email:
         </label>
-        <input type="text" id="usernameOrEmail" name="usernameOrEmail" required>
+        <input type="text" id="usernameOrEmail" name="usernameOrEmail" placeholder="&#xf007; Username/Email" required>
     </div>
 
     <div id="passwordContainer">
         <label for="password">
             <i id="passwordIcon" class="fas fa-lock"></i> Password:
         </label>
-        <input type="password" id="password" name="password" pattern="^(?=.*[A-Z])(?=.*\d).{8,}$" required>
+        <input type="password" id="password" name="password" placeholder="&#xf023; Password" pattern="^(?=.*[A-Z])(?=.*\d).{8,}$" required>
+        <small>Password must have at least one capital letter and one number.</small>
     </div>
 
     <div id="loginContainer">
